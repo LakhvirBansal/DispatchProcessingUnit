@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="423.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.ProvinceStateController">
+   <children>
+      <TableView fx:id="tblProvinceState" layoutX="-1.0" layoutY="-1.0" prefHeight="384.0" prefWidth="469.0">
+        <columns>
+          <TableColumn fx:id="code" prefWidth="131.0" text="Code" />
+          <TableColumn fx:id="name" minWidth="0.0" prefWidth="336.0" text="Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="403.0" layoutY="392.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="btnSaveProvinceState" layoutX="355.0" layoutY="392.0" mnemonicParsing="false" onAction="#btnSaveProvinceStateAction" text="Save" />
+   </children>
+</AnchorPane>

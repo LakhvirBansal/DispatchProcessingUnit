@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.BillingEditController">
+  <children>
+      <BorderPane layoutX="9.0" layoutY="35.0" prefHeight="147.0" prefWidth="639.0" style="-fx-border-color: lightgray;" />
+    <Pane layoutY="26.0" prefHeight="190.0" prefWidth="657.0">
+      <children>
+        <Label fx:id="lblCompany" layoutX="15.0" layoutY="23.0" text="Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblAddress" layoutX="16.0" layoutY="56.0" text="Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblCity" layoutX="17.0" layoutY="89.0" text="City">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblPhone" layoutX="17.0" layoutY="121.0" text="Phone">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblContact" layoutX="335.0" layoutY="23.0" text="Contact">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblZip" layoutX="335.0" layoutY="56.0" text="Zip">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblFax" layoutX="335.0" layoutY="89.0" text="Fax No">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <TextField fx:id="txtCompany" layoutX="80.0" layoutY="20.0" onKeyPressed="#companyNameKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtAddress" layoutX="80.0" layoutY="53.0" onKeyPressed="#companyAdderssKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtCity" layoutX="80.0" layoutY="86.0" onKeyPressed="#companyCityKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtPhone" layoutX="80.0" layoutY="118.0" onKeyPressed="#companyPhoneKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtContact" layoutX="392.0" layoutY="21.0" onKeyPressed="#companyContactKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtZip" layoutX="392.0" layoutY="53.0" onKeyPressed="#companyZipKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtFax" layoutX="392.0" layoutY="86.0" onKeyPressed="#companyFaxKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <Button id="btnSaveDriver" fx:id="btnUpdateBillingLocation" layoutX="513.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnUpdateBillingLocationAction" prefHeight="25.0" prefWidth="65.0" text="Save">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+        <Button fx:id="btnCancelBillingLocation" layoutX="583.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnCancelBillingLocationAction" prefHeight="25.0" prefWidth="65.0" text="Cancel">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

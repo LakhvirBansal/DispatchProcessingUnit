@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.DivisionAddController">
+   <children>
+      <TextField fx:id="txtDivisionName" layoutX="158.0" layoutY="70.0" prefHeight="25.0" prefWidth="240.0" />
+      <Text layoutX="22.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Division Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Division Code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="ddlStatus" layoutX="158.0" layoutY="112.0" prefHeight="25.0" prefWidth="240.0" />
+      <Text layoutX="23.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDivisionCode" layoutX="159.0" layoutY="26.0" prefHeight="25.0" prefWidth="240.0" />
+      <CheckBox fx:id="chkIncludeInManagementReporting" layoutX="159.0" layoutY="159.0" mnemonicParsing="false" text="Include In Management Reporting" />
+      <CheckBox fx:id="chkIncludeInAccountingTransfers" layoutX="159.0" layoutY="185.0" mnemonicParsing="false" text="Include In Accounting Transfers" />
+      <TextField fx:id="txtFedral" layoutX="158.0" layoutY="211.0" prefHeight="25.0" prefWidth="240.0" />
+      <Text layoutX="23.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fedral">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provincial">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtProvincial" layoutX="158.0" layoutY="258.0" prefHeight="25.0" prefWidth="240.0" />
+      <Text layoutX="25.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCAC">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtSCAC" layoutX="158.0" layoutY="304.0" prefHeight="25.0" prefWidth="240.0" />
+      <Text layoutX="22.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carrier Code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCarrierCode" layoutX="158.0" layoutY="349.0" prefHeight="25.0" prefWidth="240.0" />
+      <Text layoutX="21.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contract Prefix">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtContractPrefix" layoutX="158.0" layoutY="398.0" prefHeight="25.0" prefWidth="240.0" />
+      <TextField fx:id="txtInvoicePrefix" layoutX="158.0" layoutY="446.0" prefHeight="25.0" prefWidth="240.0" />
+      <Text layoutX="24.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invoice Prefix">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnSaveDivision" layoutX="261.0" layoutY="510.0" mnemonicParsing="false" onAction="#btnSaveDivisionAction" prefHeight="25.0" prefWidth="65.0" text="Update">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button fx:id="btnCancel" layoutX="331.0" layoutY="510.0" mnemonicParsing="false" onAction="#btnCancelAction" prefHeight="25.0" prefWidth="65.0" text="Cancel">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label fx:id="lblDivisionCode" layoutX="159.0" layoutY="52.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblDivisionName" layoutX="158.0" layoutY="93.0" prefHeight="11.0" prefWidth="240.0" />
+      <Label fx:id="lblStatus" layoutX="159.0" layoutY="137.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblFedral" layoutX="159.0" layoutY="235.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblProvincial" layoutX="159.0" layoutY="283.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblSCAC" layoutX="158.0" layoutY="331.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblCarierCode" layoutX="158.0" layoutY="372.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblContactPrefix" layoutX="159.0" layoutY="423.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblInvoicePrefix" layoutX="158.0" layoutY="471.0" prefHeight="17.0" prefWidth="240.0" />
+   </children>
+</AnchorPane>

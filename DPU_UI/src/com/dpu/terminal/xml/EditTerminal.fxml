@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="416.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.TerminalEditController">
+  <children>
+      <Text layoutX="15.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="107.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="12.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Services" wrappingWidth="114.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtTerminalName" layoutX="135.0" layoutY="18.0" prefHeight="25.0" prefWidth="240.0" />
+      <Button fx:id="btnUpdateTerminal" layoutX="274.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnUpdateTerminalAction" prefHeight="30.0" prefWidth="65.0" text="Update">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="343.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnCancelAction" prefHeight="25.0" prefWidth="65.0" text="Cancel">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="ddlAvailableServices" layoutX="135.0" layoutY="130.0" prefHeight="25.0" prefWidth="240.0" />
+      <Button fx:id="btnAddLocation" layoutX="378.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" text="+" />
+      <Button fx:id="btnAddAvailableServices" layoutX="378.0" layoutY="130.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" text="+" />
+      <Text layoutX="16.0" layoutY="37.841796875" strokeType="OUTSIDE" strokeWidth="0.0" text="Terminal Name" wrappingWidth="107.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="ddlLocation" layoutX="135.0" layoutY="73.0" prefWidth="150.0" />
+      <Label fx:id="lblTerminalName" layoutX="135.0" layoutY="45.0" prefHeight="19.0" prefWidth="240.0" />
+      <Label fx:id="lblLocation" layoutX="135.0" layoutY="101.0" prefHeight="12.0" prefWidth="240.0" />
+      <Label fx:id="lblAvailableServices" layoutX="135.0" layoutY="162.0" prefHeight="17.0" prefWidth="240.0" />
+      <Button fx:id="btnEdit" layoutX="203.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleEditAction" prefHeight="30.0" prefWidth="65.0" text="Edit" />
+   </children>
+</AnchorPane>

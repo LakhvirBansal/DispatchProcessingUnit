@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.EquipmentAddController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="-9.0" prefHeight="229.0" prefWidth="386.0">
+         <children>
+            <Button fx:id="btnCancel" layoutX="297.0" layoutY="174.0" mnemonicParsing="false" onAction="#btnCancelAction" prefHeight="25.0" prefWidth="65.0" text="Cancel">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSaveEquipment" layoutX="224.0" layoutY="174.0" mnemonicParsing="false" onAction="#btnSaveEquipmentAction" prefHeight="25.0" prefWidth="65.0" text="Save">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtDescription" layoutX="120.0" layoutY="72.0" prefHeight="25.0" prefWidth="240.0" />
+            <Text layoutX="24.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="79.2939453125">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="26.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="ddlType" layoutX="120.0" layoutY="117.0" onAction="#ddlTypeAction" prefHeight="25.0" prefWidth="240.0" />
+            <Text layoutX="24.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="79.2939453125">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtName" layoutX="120.0" layoutY="26.0" onKeyTyped="#txtNameKeyTyped" prefHeight="25.0" prefWidth="240.0" />
+            <Label fx:id="lblName" layoutX="120.0" layoutY="52.0" prefHeight="17.0" prefWidth="240.0" />
+            <Label fx:id="lblDescription" layoutX="120.0" layoutY="95.0" prefHeight="19.0" prefWidth="240.0" />
+            <Label fx:id="lblType" layoutX="120.0" layoutY="144.0" prefHeight="17.0" prefWidth="240.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

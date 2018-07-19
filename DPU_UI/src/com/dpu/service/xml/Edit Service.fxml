@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="416.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.ServiceEditController">
+   <children>
+      <Text layoutX="19.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service" wrappingWidth="107.759765625" AnchorPane.bottomAnchor="238.486328125" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="289.240234375" AnchorPane.topAnchor="13.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text Field" wrappingWidth="107.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Association With" wrappingWidth="131.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtService" layoutX="159.0" layoutY="14.0" onKeyPressed="#serviceNameKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+      <Button fx:id="btnUpdateService" layoutX="264.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnUpdateServiceAction" prefHeight="25.0" prefWidth="65.0" text="Update">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="ddlAssociationWith" layoutX="158.0" layoutY="107.0" onAction="#ddlAssociationWithAction" prefHeight="25.0" prefWidth="240.0" />
+      <ComboBox fx:id="ddlTextField" layoutX="158.0" layoutY="61.0" onAction="#ddlTextFieldAction" prefHeight="25.0" prefWidth="240.0" />
+      <ComboBox fx:id="ddlStatus" layoutX="158.0" layoutY="154.0" onAction="#ddlStatusAction" prefHeight="25.0" prefWidth="240.0" />
+      <Text layoutX="18.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="131.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCancel" layoutX="333.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnCancelAction" prefHeight="25.0" prefWidth="65.0" text="Cancel">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblService" layoutX="158.0" layoutY="39.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblTextField" layoutX="158.0" layoutY="85.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblAssociationWith" layoutX="158.0" layoutY="132.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblStatus" layoutX="159.0" layoutY="179.0" prefHeight="17.0" prefWidth="240.0" />
+      <Button fx:id="btnEdit" layoutX="191.0" layoutY="198.0" mnemonicParsing="false" onAction="#handleEditAction" prefHeight="29.0" prefWidth="65.0" text="Edit" />
+   </children>
+   </AnchorPane>

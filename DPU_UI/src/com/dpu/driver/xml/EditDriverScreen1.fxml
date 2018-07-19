@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="665.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.DriverEditController">
+  <children>
+    <Pane layoutY="30.0" prefHeight="511.0" prefWidth="665.0">
+      <children>
+        <Label fx:id="lblCode" layoutX="16.0" layoutY="11.0" text="Code">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblFirstName" layoutX="15.0" layoutY="43.0" text="First Name">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblLastName" layoutX="15.0" layoutY="75.0" text="Last Name">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblAddress" layoutX="15.0" layoutY="107.0" text="Address">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblUnit" layoutX="14.0" layoutY="139.0" text="Unit">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblCity" layoutX="14.0" layoutY="171.0" prefHeight="20.0" prefWidth="26.0" text="City">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblZip" layoutX="14.0" layoutY="203.0" text="Postal/Zip">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblEmail" layoutX="346.0" layoutY="11.0" text="Email">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblHome" layoutX="345.0" layoutY="43.0" text="Home">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblCellular" layoutX="345.0" layoutY="75.0" text="Cellular">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblDivision" layoutX="345.0" layoutY="107.0" text="Division">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblTerminal" layoutX="346.0" layoutY="139.0" text="Terminal">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblCategory" layoutX="346.0" layoutY="171.0" text="Category">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblStatus" layoutX="346.0" layoutY="203.0" text="Status">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblFax" layoutX="498.0" layoutY="45.0" text="FaxNo">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblPager" layoutX="497.0" layoutY="74.0" text="Pager">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblRole" layoutX="499.0" layoutY="171.0" text="Role">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <Label fx:id="lblDriverClass" layoutX="498.0" layoutY="203.0" text="Class">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+        <TabPane layoutX="8.0" layoutY="264.0" prefHeight="200.0" prefWidth="645.0" tabClosingPolicy="UNAVAILABLE">
+          <tabs>
+            <Tab text="Payroll Information">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Payroll Deduction">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+        <TextField fx:id="txtCode" layoutX="90.0" layoutY="8.0" onKeyPressed="#driverCodeKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtFirstName" layoutX="90.0" layoutY="40.0" onKeyPressed="#driverFirstNameKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtLastName" layoutX="90.0" layoutY="72.0" onKeyPressed="#driverLastNameKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtAddress" layoutX="90.0" layoutY="104.0" onKeyPressed="#driverAddressKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtUnit" layoutX="90.0" layoutY="136.0" onKeyPressed="#driverUnitKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtCity" layoutX="90.0" layoutY="168.0" onKeyPressed="#driverCityKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtPostal" layoutX="90.0" layoutY="200.0" onKeyPressed="#driverPostalKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtEmail" layoutX="410.0" layoutY="8.0" onKeyPressed="#driverEmailKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtHome" layoutX="410.0" layoutY="40.0" onKeyPressed="#driverHomeKeyPressed" prefHeight="25.0" prefWidth="80.0" />
+        <TextField fx:id="txtCellular" layoutX="410.0" layoutY="72.0" onKeyPressed="#driverCellularKeyPressed" prefHeight="25.0" prefWidth="80.0" />
+        <TextField fx:id="txtFaxNo" layoutX="541.0" layoutY="41.0" onKeyPressed="#driverFaxKeyPressed" prefHeight="25.0" prefWidth="109.0" />
+        <TextField fx:id="txtPager" layoutX="541.0" layoutY="72.0" onKeyPressed="#driverPagerKeyPressed" prefHeight="25.0" prefWidth="109.0" />
+        <ComboBox fx:id="ddlTerminal" layoutX="410.0" layoutY="136.0" prefHeight="25.0" prefWidth="240.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+        <ComboBox fx:id="ddlCategory" layoutX="410.0" layoutY="168.0" prefHeight="25.0" prefWidth="80.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+        <ComboBox fx:id="ddlRole" layoutX="541.0" layoutY="169.0" onKeyPressed="#ddlRoleKeyPressed" prefHeight="25.0" prefWidth="109.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+        <ComboBox fx:id="ddlStatus" layoutX="410.0" layoutY="200.0" onKeyPressed="#ddlStatusKeyPressed" prefHeight="25.0" prefWidth="80.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+        <ComboBox fx:id="ddlDriverClass" layoutX="541.0" layoutY="200.0" onKeyPressed="#ddlDriverClassKeyPressed" prefHeight="25.0" prefWidth="109.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+        <Button fx:id="btnUpdateDriver" layoutX="518.0" layoutY="473.0" mnemonicParsing="false" onAction="#btnUpdateDriverAction" prefWidth="65.0" text="Update">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+        <Button fx:id="btnCancelDriver" layoutX="588.0" layoutY="473.0" mnemonicParsing="false" onAction="#btnCancelDriverAction" prefWidth="65.0" text="Cancel">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <ComboBox fx:id="ddlDivision" layoutX="410.0" layoutY="105.0" onKeyPressed="#ddlDivisionKeyPressed" prefHeight="25.0" prefWidth="240.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList" />
+               </items>
+            </ComboBox>
+            <TextField fx:id="txtProvince" layoutX="90.0" layoutY="232.0" onKeyPressed="#driverProvinceKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+            <Label layoutX="14.0" layoutY="235.0" text="Province">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Button fx:id="btnEdit" layoutX="461.0" layoutY="473.0" mnemonicParsing="false" onMouseClicked="#handleEditAction" prefHeight="29.0" prefWidth="52.0" text="Edit" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

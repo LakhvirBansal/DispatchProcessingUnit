@@ -1,0 +1,22 @@
+#lblCompanyHeader:hover{
+	-fx-text-fill:"#FFFFFF";
+}
+#lblResources:hover{
+	-fx-text-fill:"#FFFFFF";
+}
+#lblLists:hover{
+	-fx-text-fill:"#FFFFFF";
+}
+#lblLocationsHeader:hover{
+	-fx-text-fill:"#FFFFFF";
+}
+#lblCustomBroker:hover{
+	-fx-text-fill:"#FFFFFF";
+}
+#lblOutsideCarrier:hover{
+	-fx-text-fill:"#FFFFFF";
+}
+#lblCarrierContract:hover{
+	-fx-text-fill:"#FFFFFF";
+}
+

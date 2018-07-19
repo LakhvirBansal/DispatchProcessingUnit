@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="371.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.TrailerEditController">
+  <children>
+    <TabPane layoutX="5.0" layoutY="23.0" prefHeight="348.0" prefWidth="756.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="General">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="273.0" prefWidth="694.0" style="-fx-border-color: black;">
+              <children>
+                <Label layoutX="11.0" layoutY="16.0" text="Unit No." />
+                <Label layoutX="11.0" layoutY="67.0" text="Owner" />
+                <Label layoutX="9.0" layoutY="116.0" text="O/O's Name" />
+                <Label layoutX="9.0" layoutY="229.0" text="Status" />
+                <Label layoutX="11.0" layoutY="171.0" text="Category" />
+                <Label layoutX="369.0" layoutY="16.0" text="Usage" />
+                <Label layoutX="371.0" layoutY="68.0" text="Division" />
+                <Label layoutX="369.0" layoutY="110.0" text="Terminal" />
+                <Label layoutX="369.0" layoutY="168.0" text="Trailer Type" />
+                <Label layoutX="369.0" layoutY="229.0" text="Finance" />
+                <TextField fx:id="txtUnitNo" layoutX="92.0" layoutY="11.0" onKeyPressed="#trailerUnitKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+                <TextField fx:id="txtOwner" layoutX="92.0" layoutY="63.0" prefHeight="25.0" prefWidth="240.0" />
+                <TextField fx:id="txtUsage" layoutX="442.0" layoutY="12.0" prefHeight="25.0" prefWidth="240.0" />
+                <TextField fx:id="txtOoName" layoutX="92.0" layoutY="113.0" prefHeight="25.0" prefWidth="240.0" />
+                <TextField fx:id="txtFinance" layoutX="442.0" layoutY="224.0" prefHeight="25.0" prefWidth="240.0" />
+                <ComboBox fx:id="ddlStatus" layoutX="92.0" layoutY="224.0" prefHeight="25.0" prefWidth="240.0" />
+                <ComboBox fx:id="ddlCategory" layoutX="92.0" layoutY="166.0" prefHeight="25.0" prefWidth="240.0" />
+                <ComboBox fx:id="ddlDivision" layoutX="440.0" layoutY="67.0" prefHeight="25.0" prefWidth="240.0" />
+                <ComboBox fx:id="ddlTerminal" layoutX="440.0" layoutY="113.0" prefHeight="25.0" prefWidth="240.0" />
+                <ComboBox fx:id="ddlTrailerType" layoutX="442.0" layoutY="166.0" prefHeight="25.0" prefWidth="240.0" />
+                <Button fx:id="btnUpdateTrailer" layoutX="537.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnUpdateTrailerAction" prefHeight="25.0" prefWidth="65.0" text="Update">
+                  <font>
+                    <Font size="13.0" fx:id="x1" />
+                  </font>
+                </Button>
+                <Button fx:id="btnCancelTrailer" font="$x1" layoutX="615.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnCancelTrailerAction" prefHeight="25.0" prefWidth="65.0" text="Cancel" />
+                <Label fx:id="unitMsg" layoutX="92.0" layoutY="37.0" prefWidth="240.0" text="" />
+                        <Button fx:id="btnEdit" layoutX="473.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleEditAction" prefHeight="27.0" prefWidth="54.0" text="Edit" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Notes">
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextArea fx:id="txtNotes" layoutX="3.0" prefHeight="176.0" prefWidth="600.0" />
+                <Button fx:id="btnDateStamp" layoutX="609.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Date Stamp" />
+                <Button fx:id="btnPrint" layoutX="609.0" layoutY="45.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Print" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</Pane>

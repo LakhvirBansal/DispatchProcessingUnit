@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1346.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.CarrierContractController">
+   <children>
+      <Pane fx:id="innerRootPane" prefHeight="49.0" prefWidth="1343.0" style="-fx-background-color: #d6eaf8;">
+         <children>
+            <TextField fx:id="txtSearchCarrierContract" focusTraversable="false" layoutX="1095.0" layoutY="6.0" prefHeight="32.0" prefWidth="200.0" promptText="Enter contract name to search..." />
+            <ImageView fx:id="btnDelete" fitHeight="32.0" fitWidth="32.0" layoutX="99.0" layoutY="6.0" onMouseClicked="#btnDeleteCarrierContractAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnEdit" fitHeight="32.0" fitWidth="32.0" layoutX="58.0" layoutY="6.0" onMouseClicked="#btnEditCarrierContractAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/edit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnAdd" fitHeight="32.0" fitWidth="32.0" layoutX="16.0" layoutY="6.0" onMouseClicked="#btnAddCarrierContractAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/plus.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnGo" fitHeight="32.0" fitWidth="32.0" layoutX="1302.0" layoutY="6.0" onMouseClicked="#btnGoCarrierContractAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/search.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <TableView fx:id="tableCarrierContract" layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleRowSelect" prefHeight="584.0" prefWidth="1343.0">
+         <columns>
+            <TableColumn fx:id="contractNo" prefWidth="81.0" text="ContractNo" />
+            <TableColumn fx:id="contractRate" prefWidth="85.0" text="Contract Rate" />
+            <TableColumn fx:id="hours" prefWidth="41.0" text="Hours" />
+            <TableColumn fx:id="miles" prefWidth="44.0" text="Miles" />
+            <TableColumn fx:id="dispatched" prefWidth="75.0" text="Dispatched" />
+            <TableColumn fx:id="insExpires" prefWidth="68.0" text="InsExpires" />
+            <TableColumn fx:id="cargo" prefWidth="41.0" text="Cargo" />
+            <TableColumn fx:id="liabity" prefWidth="57.0" text="Liability" />
+            <TableColumn fx:id="transDoc" prefWidth="63.0" text="Trans Doc" />
+            <TableColumn fx:id="mCno" prefWidth="45.0" text="MC No" />
+            <TableColumn fx:id="carrierName" prefWidth="65.0" text="Carrier Name" />
+            <TableColumn fx:id="arrangedWithName" prefWidth="75.0" text="ArrangedWithName" />
+            <TableColumn fx:id="driverName" prefWidth="75.0" text="Driver Name" />
+            <TableColumn fx:id="currencyName" prefWidth="75.0" text="Currency Name" />
+            <TableColumn fx:id="categoryName" prefWidth="75.0" text="Category Name" />
+            <TableColumn fx:id="roleName" prefWidth="75.0" text="Role Name" />
+            <TableColumn fx:id="equipmentName" prefWidth="75.0" text="Equipment Name" />
+            <TableColumn fx:id="commodityName" prefWidth="75.0" text="Commodity Name" />
+            <TableColumn fx:id="divisionName" prefWidth="75.0" text="Division Name" />
+            <TableColumn fx:id="dispatcherName" prefWidth="75.0" text="Dispatcher Name" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

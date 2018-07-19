@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.order.OrderController">
+   <children>
+      <AnchorPane fx:id="anchorPaneOrder" prefHeight="49.0" prefWidth="969.0" style="-fx-background-color: #d6eaf8;">
+         <children>
+            <TextField fx:id="txtSearchOrders" focusTraversable="false" layoutX="713.0" layoutY="7.0" prefHeight="32.0" prefWidth="207.0" promptText="Enter company name to search orders..." />
+            <ImageView fx:id="btnAddOrder" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="7.0" onMouseClicked="#btnAddOrderAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/plus.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnEditOrder" fitHeight="32.0" fitWidth="32.0" layoutX="56.0" layoutY="7.0" onMouseClicked="#btnEditOrderAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/edit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnDeleteOrder" fitHeight="32.0" fitWidth="32.0" layoutX="97.0" layoutY="7.0" onMouseClicked="#btnDeleteOrderAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnGoOrder" fitHeight="32.0" fitWidth="32.0" layoutX="928.0" layoutY="7.0" onMouseClicked="#btnGoOrderAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/search.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblOrder" layoutY="42.0" onMouseClicked="#tblOrderMouseClicked" prefHeight="758.0" prefWidth="969.0">
+        <columns>
+            <TableColumn fx:id="customerName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="billingLocationName" prefWidth="92.0" text="Billing Location" />
+            <TableColumn fx:id="contactName" prefWidth="87.0" text="Contact Name" />
+            <TableColumn fx:id="temperatureName" prefWidth="125.0" text="Temperature Name" />
+            <TableColumn fx:id="temperatureValue" prefWidth="127.0" text="Temperature Value" />
+            <TableColumn fx:id="temperatureTypeName" prefWidth="127.0" text="Temperature Type" />
+            <TableColumn fx:id="rate" prefWidth="76.0" text="Rate" />
+            <TableColumn fx:id="poNo" prefWidth="107.0" text="PO No." />
+            <TableColumn fx:id="currencyName" prefWidth="152.0" text="Currency Name" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

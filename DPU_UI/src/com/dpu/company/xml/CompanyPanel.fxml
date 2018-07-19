@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="1014.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.CompanyController">
+   <children>
+      <Pane fx:id="headerPaneCompany" prefHeight="49.0" prefWidth="1015.0" style="-fx-background-color: #d6eaf8;">
+         <children>
+            <TextField fx:id="txtGoCompany" focusTraversable="false" layoutX="768.0" layoutY="5.0" prefHeight="32.0" prefWidth="200.0" promptText="Enter company name to search..." />
+            <ImageView fx:id="btnGoCompany" fitHeight="32.0" fitWidth="32.0" layoutX="974.0" layoutY="5.0" onMouseClicked="#btnGoCompanyAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/search.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnDeleteCompany" fitHeight="32.0" fitWidth="32.0" layoutX="97.0" layoutY="5.0" onMouseClicked="#btnDeleteCompanyAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnEditCompany" fitHeight="32.0" fitWidth="32.0" layoutX="56.0" layoutY="5.0" onMouseClicked="#btnEditCompanyAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/edit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnAddCompany" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="5.0" onMouseClicked="#btnAddCompanyAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/plus.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="anchorPane" layoutY="49.0" prefHeight="568.0" prefWidth="1015.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" prefHeight="566.0" prefWidth="1015.0">
+               <content>
+                  <TableView fx:id="tblCompany" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleAddContMouseClick" prefHeight="551.0" prefWidth="1015.0">
+                    <columns>
+                      	<TableColumn fx:id="unitNo" prefWidth="80.0" text="UnitNo" />
+                      	<TableColumn fx:id="name" prefWidth="80.0" text="Name" />
+                        <TableColumn fx:id="email" prefWidth="80.0" text="Email" />
+                        <TableColumn fx:id="city" prefWidth="50.0" text="City" />
+                        <TableColumn fx:id="ps" prefWidth="80.0" text="P/S" />
+                        <TableColumn fx:id="category" prefWidth="80.0" text="Category" />
+                        <TableColumn fx:id="division" prefWidth="80.0" text="Division" />
+                        <TableColumn fx:id="sale" prefWidth="80.0" text="Sale" />
+                        <TableColumn fx:id="country" prefWidth="80.0" text="Country" />
+                        
+                                                            <TableColumn fx:id="contactName" prefWidth="80.0" text="ContactName" />
+                      	<TableColumn fx:id="designation" prefWidth="80.0" text="Designation" />
+                        <TableColumn fx:id="phoneNo" prefWidth="50.0" text="PhoneNo" />
+                        <TableColumn fx:id="extensionNo" prefWidth="80.0" text="ExtensionNo" />
+                        <TableColumn fx:id="faxNo" prefWidth="40.0" text="FaxNo" />
+                        <TableColumn fx:id="emergencyNo" prefWidth="80.0" text="EmergencyNo" />
+                        <TableColumn fx:id="cellular" prefWidth="80.0" text="Cellular" />
+                        <TableColumn fx:id="status" prefWidth="40.0" text="Status" />
+                        <TableColumn fx:id="emailContact" prefWidth="50.0" text="Email" />
+                        <TableColumn fx:id="function" prefWidth="70.0" text="Function" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+  <!--  <TextField fx:id="textfield" layoutX="29.0" layoutY="298.0" onAction="#onEnter" prefWidth="121.0"  promptText="Enter here to filter"/> -->
+  <!--  <TextField fx:id="yourTextField" onKeyPressed="#handleEnterPressed"> -->
+</Pane>

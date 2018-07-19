@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="595.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.planner.PlannerController">
+   <children>
+      <TabPane prefHeight="37.0" prefWidth="165.0" style="-fx-background-color: #d6eaf8;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabPaneDrivers" onSelectionChanged="#tabPaneDriversSelection" text="Drivers" />
+          <Tab fx:id="tabPaneTrucks" onSelectionChanged="#tabPaneTrucksSelection" text="Trucks" />
+            <Tab fx:id="tabPaneTrailers" onSelectionChanged="#tabPaneTrailersSelection" text="Trailers" />
+        </tabs>
+      </TabPane>
+      <TableView fx:id="tblLists" layoutY="36.0" prefHeight="194.0" prefWidth="165.0">
+        <columns>
+          <TableColumn fx:id="list" prefWidth="163.0" text="List" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblPlanner" layoutX="165.0" layoutY="36.0" prefHeight="194.0" prefWidth="587.0" />
+      <AnchorPane fx:id="rightAnchorPane" layoutX="165.0" layoutY="-1.0" prefHeight="37.0" prefWidth="587.0" style="-fx-background-color: #d6eaf8;">
+         <children>
+            <ImageView fx:id="btnLeft" fitHeight="32.0" fitWidth="32.0" layoutX="1.0" layoutY="2.0" onMouseClicked="#btnLeftAction">
+               <image>
+                  <Image url="com/dpu/common/xml/left-arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRight" fitHeight="32.0" fitWidth="32.0" layoutX="42.0" layoutY="2.0" onMouseClicked="#btnRightAction">
+               <image>
+                  <Image url="com/dpu/common/xml/right-arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnToday" fitHeight="32.0" fitWidth="32.0" layoutX="81.0" layoutY="3.0" onMouseClicked="#btnTodayAction">
+               <image>
+                  <Image url="com/dpu/common/xml/calendar.png" />
+               </image>
+            </ImageView>
+            <DatePicker fx:id="datePicker" layoutX="398.0" layoutY="3.0" onAction="#datePickerAction" prefHeight="32.0" prefWidth="181.0">
+            </DatePicker>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

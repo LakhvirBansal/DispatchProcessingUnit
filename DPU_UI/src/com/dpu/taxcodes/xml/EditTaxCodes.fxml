@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="331.0" prefWidth="443.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.database.TaxCodeEditController">
+   <children>
+      <Text layoutX="19.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax Code" wrappingWidth="107.759765625" AnchorPane.bottomAnchor="238.486328125" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="289.240234375" AnchorPane.topAnchor="13.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="107.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taxable" wrappingWidth="131.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtTaxCode" layoutX="188.0" layoutY="12.0" prefHeight="25.0" prefWidth="240.0" />
+      <Button fx:id="btnUpdateTaxCode" layoutX="265.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnUpdateTaxCodeAction" prefHeight="25.0" prefWidth="65.0" text="Update">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="ddlTaxable" layoutX="188.0" layoutY="109.0" prefHeight="25.0" prefWidth="240.0" />
+      <Text layoutX="18.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percentage" wrappingWidth="131.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCancel" layoutX="334.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnCancelAction" prefHeight="25.0" prefWidth="65.0" text="Cancel">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblService" layoutX="158.0" layoutY="39.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblTextField" layoutX="158.0" layoutY="85.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblAssociationWith" layoutX="158.0" layoutY="132.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblStatus" layoutX="159.0" layoutY="179.0" prefHeight="17.0" prefWidth="240.0" />
+      <TextField fx:id="txtDescription" layoutX="188.0" layoutY="63.0" prefHeight="25.0" prefWidth="240.0" />
+      <TextField fx:id="txtPercentage" layoutX="188.0" layoutY="154.0" prefHeight="25.0" prefWidth="240.0" />
+      <TextField fx:id="txtAccountSales" layoutX="188.0" layoutY="204.0" onKeyPressed="#txtAccountSalesKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+      <Text layoutX="19.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G/L Account for sales" wrappingWidth="131.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G/L Account for revenue" wrappingWidth="178.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtAccountRevenue" layoutX="188.0" layoutY="249.0" onKeyPressed="#txtAccountRevenueKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+      <Button fx:id="btnEdit" layoutX="197.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleEditAction" prefHeight="25.0" prefWidth="65.0" text="Edit">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

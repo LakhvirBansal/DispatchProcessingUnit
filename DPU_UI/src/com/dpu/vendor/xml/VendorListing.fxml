@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.vendor.VendorController">
+   <children>
+      <Pane fx:id="headerPaneVendor" prefHeight="49.0" prefWidth="1015.0" style="-fx-background-color: #d6eaf8;">
+         <children>
+            <TextField fx:id="txtSearchVendor" focusTraversable="false" layoutX="768.0" layoutY="5.0" prefHeight="32.0" prefWidth="200.0" promptText="Enter vendor name to search..." />
+            <ImageView fx:id="btnGoVendor" fitHeight="32.0" fitWidth="32.0" layoutX="974.0" layoutY="5.0" onMouseClicked="#btnGoVendorAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/search.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnDeleteVendor" fitHeight="32.0" fitWidth="32.0" layoutX="97.0" layoutY="5.0" onMouseClicked="#btnDeleteVendorAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnEditVendor" fitHeight="32.0" fitWidth="32.0" layoutX="56.0" layoutY="5.0" onMouseClicked="#btnEditVendorAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/edit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnAddVendor" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="5.0" onMouseClicked="#btnAddVendorAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/plus.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <TableView fx:id="tblVendor" layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleAddContMouseClick" prefHeight="584.0" prefWidth="1015.0">
+        <columns>
+          <TableColumn fx:id="unitNo" prefWidth="112.0" text="UnitNo" />
+          <TableColumn fx:id="name" prefWidth="112.0" text="Name" />
+            <TableColumn fx:id="email" prefWidth="112.0" text="Email" />
+            <TableColumn fx:id="city" prefWidth="112.0" text="City" />
+            <TableColumn fx:id="ps" prefWidth="112.0" text="P/S" />
+            <TableColumn fx:id="phone" prefWidth="112.0" text="Phone" />
+            <TableColumn fx:id="home" prefWidth="112.0" text="Home" />
+            <TableColumn fx:id="fax" prefWidth="112.0" text="Fax" />
+            <TableColumn fx:id="afterHours" prefWidth="112.0" text="After Hours" />
+        </columns>
+      </TableView>
+   </children>
+  <!--  <TextField fx:id="textfield" layoutX="29.0" layoutY="298.0" onAction="#onEnter" prefWidth="121.0"  promptText="Enter here to filter"/> -->
+  <!--  <TextField fx:id="yourTextField" onKeyPressed="#handleEnterPressed"> -->
+</Pane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="24.0" layoutY="176.0" text="Fax No">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="208.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="145.0" text="Phone No">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="114.0" text="Border Crossing">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="83.0" text="Border Agent">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="51.0" text="Fier Code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPhoneNo" layoutX="145.0" layoutY="138.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="txtBorderCrossing"  layoutX="145.0" layoutY="106.0" prefHeight="25.0" prefWidth="137.0" />
+      <TextField fx:id="txtBorderAgent"  layoutX="145.0" layoutY="75.0" prefHeight="25.0" prefWidth="260.0" />
+      <TextField fx:id="txtFierCode"  layoutX="145.0" layoutY="43.0" prefHeight="25.0" prefWidth="260.0" />
+      <Label layoutX="295.0" layoutY="109.0" text="P/S">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPS"  layoutX="333.0" layoutY="106.0" prefHeight="25.0" prefWidth="72.0" />
+      <Label layoutX="294.0" layoutY="141.0" text="Ext.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFaxNo"  layoutX="145.0" layoutY="174.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="txtEmail"  layoutX="145.0" layoutY="206.0" prefHeight="25.0" prefWidth="260.0" />
+      <Button fx:id="btnSave" layoutX="484.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="Save" />
+      <Button fx:id="btnCancel" layoutX="484.0" layoutY="397.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="Cancel" />
+      <Label layoutX="2.0" layoutY="1.0" prefHeight="27.0" prefWidth="623.0" style="-fx-background-color: lightgrey; -fx-border-color: black;" text="New Border Agent">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="239.0" text="Status">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ddlStatus" layoutX="145.0" layoutY="237.0" prefHeight="25.0" prefWidth="260.0" />
+      <TextField fx:id="txtExt"  layoutX="333.0" layoutY="138.0" prefHeight="25.0" prefWidth="72.0" />
+      <Label layoutX="26.0" layoutY="281.0" text="Opne From">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOpenFrom"  layoutX="145.0" layoutY="280.0" prefHeight="25.0" prefWidth="72.0" />
+      <Label layoutX="234.0" layoutY="283.0" text="To">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTo"  layoutX="263.0" layoutY="281.0" prefHeight="25.0" prefWidth="83.0" />
+      <CheckBox fx:id="chkOne24Hours" layoutX="355.0" layoutY="284.0" mnemonicParsing="false" text="Opne 24 Hours" />
+      <Label layoutX="26.0" layoutY="320.0" text="Comments">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taComments" layoutX="139.0" layoutY="320.0" prefHeight="109.0" prefWidth="273.0" />
+   </children>
+</Pane>

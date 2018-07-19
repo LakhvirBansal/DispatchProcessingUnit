@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="195.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.order.TemperatureController">
+   <children>
+      <Label layoutX="35.0" layoutY="50.0" text="Reefer Mode" />
+      <ComboBox fx:id="ddlTemperature" layoutX="148.0" layoutY="46.0" prefWidth="150.0" />
+      <ComboBox fx:id="ddlTemperatureType" layoutX="246.0" layoutY="79.0" prefHeight="25.0" prefWidth="52.0" />
+      <Label layoutX="35.0" layoutY="83.0" text="Temperature" />
+      <Button fx:id="btnUpdateTemperature" layoutX="93.0" layoutY="118.0" mnemonicParsing="false" onAction="#btnUpdateTemperatureAction" text="Update" />
+      <Button layoutX="168.0" layoutY="118.0" mnemonicParsing="false" text="Cancel" />
+      <TextField fx:id="txtTemperature" layoutX="148.0" layoutY="79.0" prefHeight="25.0" prefWidth="92.0" />
+   </children>
+</AnchorPane>

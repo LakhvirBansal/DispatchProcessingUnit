@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="trailerRootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.TrailerController">
+  <children>
+    <Pane fx:id="trailerPane" layoutX="-5.0" prefHeight="625.0" prefWidth="1021.0" style="-fx-background-color: #d6eaf8;">
+      <children>
+        <TableView fx:id="tblTrailer" layoutY="43.0" onMouseClicked="#handleAddContMouseClick" prefHeight="581.0" prefWidth="1015.0">
+          <columns>
+            <TableColumn fx:id="unitNo" maxWidth="5000.0" prefWidth="100.0" text="Unit No." />
+            <TableColumn fx:id="owner" maxWidth="5000.0" prefWidth="100.0" text="Owner" />
+            <TableColumn fx:id="oOName" maxWidth="5000.0" prefWidth="100.0" text="O/O's Name" />
+            <TableColumn fx:id="category" maxWidth="5000.0" prefWidth="100.0" text="Category" />
+            <TableColumn fx:id="status" maxWidth="5000.0" prefWidth="100.0" text="Status" />
+            <TableColumn fx:id="usage" maxWidth="5000.0" prefWidth="100.0" text="Usage" />
+            <TableColumn fx:id="division" maxWidth="5000.0" prefWidth="100.0" text="Division" />
+            <TableColumn fx:id="terminal" maxWidth="5000.0" minWidth="0.0" prefWidth="100.0" text="Terminal" />
+            <TableColumn fx:id="trailerType" maxWidth="5000.0" prefWidth="100.0" text="Truck Type" />
+            <TableColumn fx:id="finance" maxWidth="5000.0" prefWidth="100.0" text="Finance" />
+          </columns>
+        </TableView>
+            <ImageView fx:id="btnAddTrailer" fitHeight="32.0" fitWidth="32.0" layoutX="7.0" layoutY="5.0" onMouseClicked="#btnAddTrailerAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/plus.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnEditTrailer" fitHeight="32.0" fitWidth="32.0" layoutX="49.0" layoutY="5.0" onMouseClicked="#btnEditTrailerAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/edit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnDeleteTrailer" fitHeight="32.0" fitWidth="32.0" layoutX="90.0" layoutY="5.0" onMouseClicked="#btnDeleteTrailerAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/delete.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="131.0" prefHeight="32.0" prefWidth="625.0" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="txtSearchTrailer" focusTraversable="false" layoutX="762.0" layoutY="5.0" prefHeight="32.0" prefWidth="200.0" promptText="Enter trailer name to search..." />
+            <ImageView fx:id="btnGoTrailer" fitHeight="32.0" fitWidth="32.0" layoutX="969.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/search.png" />
+               </image>
+            </ImageView>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

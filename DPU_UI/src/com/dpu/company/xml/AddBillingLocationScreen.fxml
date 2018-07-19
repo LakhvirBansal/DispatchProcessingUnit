@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="233.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.BillingAddController">
+  <children>
+    <Pane layoutX="0.0" layoutY="3.0" prefHeight="233.0" prefWidth="666.0">
+      <children>
+        <Label fx:id="lblCompany" layoutX="14.0" layoutY="14.0" text="Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblAddress" layoutX="14.0" layoutY="50.0" text="Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblCity" layoutX="14.0" layoutY="153.0" text="City">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblPhone" layoutX="338.0" layoutY="82.0" text="Phone">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblContact" layoutX="340.0" layoutY="17.0" text="Contact">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblZip" layoutX="338.0" layoutY="152.0" text="Zip">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <Label fx:id="lblFax" layoutX="338.0" layoutY="116.0" text="Fax No">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+        <TextField fx:id="txtCompany" layoutX="82.0" layoutY="14.0" onKeyPressed="#companyNameKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtAddress" layoutX="82.0" layoutY="46.0" onKeyPressed="#companyAdderssKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtCity" layoutX="82.0" layoutY="149.0" onKeyPressed="#companyCityKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtPhone" layoutX="407.0" layoutY="79.0" onKeyPressed="#companyPhoneKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtContact" layoutX="406.0" layoutY="15.0" onKeyPressed="#companyContactKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtZip" layoutX="409.0" layoutY="149.0" onKeyPressed="#companyZipKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtFax" layoutX="407.0" layoutY="113.0" onKeyPressed="#companyFaxKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <Button id="btnSaveDriver" fx:id="btnSaveBillingLocation" layoutX="499.0" layoutY="187.0" mnemonicParsing="false" onAction="#btnSaveBillingLocationAction" prefHeight="25.0" prefWidth="65.0" text="Save">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+        <Button fx:id="btnCancelBillingLocation" layoutX="569.0" layoutY="187.0" mnemonicParsing="false" onAction="#btnCancelBillingLocationAction" prefHeight="25.0" prefWidth="65.0" text="Cancel">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtAddress1" layoutX="406.0" layoutY="48.0" onKeyPressed="#companyAdderssKeyPressed" prefHeight="20.0" prefWidth="240.0" />
+            <Label fx:id="lblAddress1" layoutX="340.0" layoutY="51.0" text="Address2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtProvince" layoutX="81.0" layoutY="113.0" onKeyPressed="#txtProvinceKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+            <Label fx:id="lblPhone1" layoutX="14.0" layoutY="116.0" text="P/S">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="ddlCountry" layoutX="82.0" layoutY="79.0" prefHeight="25.0" prefWidth="240.0" />
+            <Label fx:id="lblFax1" layoutX="14.0" layoutY="82.0" text="Country">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

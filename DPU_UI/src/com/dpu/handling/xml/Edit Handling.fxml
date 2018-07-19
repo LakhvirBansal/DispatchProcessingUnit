@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="198.0" prefWidth="416.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.database.HandlingEditController">
+    <children>
+      <Text layoutX="23.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Handling" wrappingWidth="107.759765625" AnchorPane.bottomAnchor="149.486328125" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="285.240234375" AnchorPane.topAnchor="29.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtHandling" layoutX="145.0" layoutY="27.0" prefHeight="25.0" prefWidth="230.0" />
+      <Button fx:id="btnUpdateHandling" layoutX="235.0" layoutY="132.0" mnemonicParsing="false" onAction="#btnUpdateHandlingAction" prefHeight="25.0" prefWidth="65.0" text="Update">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="310.0" layoutY="132.0" mnemonicParsing="false" onAction="#btnCancelAction" prefHeight="25.0" prefWidth="65.0" text="Cancel">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="ddlStatus" layoutX="145.0" layoutY="74.0" prefHeight="25.0" prefWidth="230.0" />
+      <Text layoutX="24.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" />
+      <Label id="lblHandling" layoutX="145.0" layoutY="52.0" prefHeight="17.0" prefWidth="230.0" />
+      <Label id="lblStatus" layoutX="145.0" layoutY="103.0" prefHeight="17.0" prefWidth="230.0" />
+      <Button fx:id="btnEdit" layoutX="163.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleEditAction" prefHeight="29.0" prefWidth="65.0" text="Edit" />
+   </children>
+   
+</AnchorPane>

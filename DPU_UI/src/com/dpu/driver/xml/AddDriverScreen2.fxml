@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.DriverAddController">
+  <children>
+    <Pane layoutX="0.0" layoutY="30.0" prefHeight="511.0" prefWidth="665.0">
+      <children>
+        <Label layoutX="15.0" layoutY="10.0" text="Code">
+          <font>
+            <Font size="14.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="15.0" layoutY="55.0" text="First Name" />
+        <Label font="$x1" layoutX="15.0" layoutY="99.0" text="Last Name" />
+        <Label font="$x1" layoutX="14.0" layoutY="145.0" text="Address" />
+        <Label font="$x1" layoutX="346.0" layoutY="231.0" text="Unit" />
+        <Label font="$x1" layoutX="14.0" layoutY="192.0" prefHeight="20.0" prefWidth="31.0" text="City" />
+        <Label font="$x1" layoutX="15.0" layoutY="230.0" text="Zip" />
+        <Label font="$x1" layoutX="344.0" layoutY="11.0" text="Email" />
+        <Label font="$x1" layoutX="344.0" layoutY="42.0" text="Home" />
+        <Label font="$x1" layoutX="344.0" layoutY="75.0" text="Cellular" />
+        <Label font="$x1" layoutX="344.0" layoutY="106.0" text="Division" />
+        <Label font="$x1" layoutX="344.0" layoutY="138.0" text="Terminal" />
+        <Label font="$x1" layoutX="344.0" layoutY="170.0" text="Category" />
+        <Label font="$x1" layoutX="344.0" layoutY="202.0" text="Status" />
+        <Label font="$x1" layoutX="496.0" layoutY="42.0" text="FaxNo" />
+        <Label font="$x1" layoutX="498.0" layoutY="74.0" text="Pager" />
+        <Label font="$x1" layoutX="498.0" layoutY="170.0" text="Role" />
+        <Label font="$x1" layoutX="497.0" layoutY="202.0" text="Class" />
+        <TabPane layoutX="9.0" layoutY="264.0" prefHeight="200.0" prefWidth="645.0" tabClosingPolicy="UNAVAILABLE">
+          <tabs>
+            <Tab text="Payroll Information">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Payroll Deduction">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+        <TextField fx:id="txtCode" layoutX="89.0" layoutY="7.0" onKeyPressed="#driverCodeKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtFirstName" layoutX="89.0" layoutY="52.0" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtLastName" layoutX="89.0" layoutY="96.0" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtAddress" layoutX="89.0" layoutY="142.0" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtUnit" layoutX="409.0" layoutY="230.0" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtCity" layoutX="89.0" layoutY="189.0" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtPostal" layoutX="89.0" layoutY="227.0" prefHeight="25.0" prefWidth="80.0" />
+        <TextField fx:id="txtEmail" layoutX="409.0" layoutY="7.0" prefHeight="25.0" prefWidth="240.0" />
+        <TextField fx:id="txtHome" layoutX="409.0" layoutY="39.0" prefHeight="25.0" prefWidth="80.0" />
+        <TextField fx:id="txtCellular" layoutX="409.0" layoutY="71.0" prefHeight="25.0" prefWidth="80.0" />
+        <TextField fx:id="txtFaxNo" layoutX="539.0" layoutY="39.0" prefHeight="25.0" prefWidth="109.0" />
+        <TextField fx:id="txtPager" layoutX="539.0" layoutY="71.0" prefHeight="25.0" prefWidth="109.0" />
+        <ComboBox fx:id="ddlTerminal" layoutX="409.0" layoutY="136.0" prefHeight="25.0" prefWidth="240.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+        <ComboBox fx:id="ddlCategory" layoutX="409.0" layoutY="167.0" prefHeight="25.0" prefWidth="80.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+        <ComboBox fx:id="ddlRole" layoutX="540.0" layoutY="167.0" prefHeight="25.0" prefWidth="109.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+        <ComboBox fx:id="ddlStatus" layoutX="409.0" layoutY="199.0" prefHeight="25.0" prefWidth="80.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+        <ComboBox fx:id="ddlDriverClass" layoutX="540.0" layoutY="199.0" prefHeight="25.0" prefWidth="109.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+        <Button fx:id="btnSaveDriver" layoutX="519.0" layoutY="474.0" mnemonicParsing="false" onAction="#btnSaveDriverAction" prefHeight="25.0" prefWidth="65.0" text="Save">
+          <font>
+            <Font size="13.0" fx:id="x2" />
+          </font>
+        </Button>
+        <Button fx:id="btnCancelDriver" font="$x2" layoutX="589.0" layoutY="474.0" mnemonicParsing="false" onAction="#btnCancelDriverAction" prefHeight="25.0" prefWidth="65.0" text="Cancel" />
+        <ComboBox fx:id="ddlDivision" layoutX="409.0" layoutY="104.0" prefHeight="25.0" prefWidth="240.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+        <TextField fx:id="txtProvince" layoutX="235.0" layoutY="228.0" prefHeight="25.0" prefWidth="94.0" />
+        <Label font="$x1" layoutX="174.0" layoutY="230.0" text="Province" />
+        <Label fx:id="codeMsg" layoutX="89.0" layoutY="29.0" prefWidth="240.0" text="" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

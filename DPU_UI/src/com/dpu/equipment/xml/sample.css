@@ -1,0 +1,9 @@
+#tblEquipment #name #lblName {
+    -fx-text-fill: black;
+}
+#tblEquipment #type #lblType {
+    -fx-text-fill: black;
+}
+#tblEquipment #descrption #lblDescription {
+    -fx-text-fill: black;
+}

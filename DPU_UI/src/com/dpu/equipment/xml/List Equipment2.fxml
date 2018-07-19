@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#anchorPaneKeyTyped" prefHeight="800.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.EquipmentController">
+   <children>
+      <AnchorPane fx:id="anchorPaneEquipment" prefHeight="49.0" prefWidth="969.0" style="-fx-background-color: #d6eaf8;">
+         <children>
+            <TextField fx:id="txtSearchEquipment" focusTraversable="false" layoutX="713.0" layoutY="7.0" prefHeight="32.0" prefWidth="207.0" promptText="Enter Equipment Name to Search..." />
+            <ImageView fx:id="btnAddEquipment" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="7.0" onMouseClicked="#btnAddEquipmentAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/plus.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnEditEquipment" fitHeight="32.0" fitWidth="32.0" layoutX="56.0" layoutY="7.0" onMouseClicked="#btnEditEquipmentAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/edit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnDeleteEquipment" fitHeight="32.0" fitWidth="32.0" layoutX="97.0" layoutY="7.0" onMouseClicked="#btnDeleteEquipmentAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnGoEquipment" fitHeight="32.0" fitWidth="32.0" layoutX="928.0" layoutY="7.0" onMouseClicked="#btnGoEquipmentAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/search.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblEquipment" onMouseClicked="#handleRowSelect" layoutY="42.0" prefHeight="758.0" prefWidth="969.0">
+        <columns>
+            <TableColumn fx:id="name" prefWidth="206.0">
+               <graphic>
+                  <Label fx:id="lblName" onMousePressed="#lblNameMouseClick" prefHeight="17.0" prefWidth="200.0" text="Name" />
+               </graphic></TableColumn>
+          <TableColumn fx:id="type" prefWidth="190.0">
+               <graphic>
+                  <Label fx:id="lblType" onMousePressed="#lblTypeMouseClick" prefHeight="17.0" prefWidth="184.0" text="Type" />
+               </graphic></TableColumn>
+          <TableColumn fx:id="description" prefWidth="525.0">
+               <graphic>
+                  <Label fx:id="lblDescription" text="Description" />
+               </graphic></TableColumn>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

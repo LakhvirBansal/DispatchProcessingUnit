@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="535.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.database.CustomBrokerEditController">
+   <children>
+      <TabPane layoutY="23.0" prefHeight="511.0" prefWidth="857.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="General">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="857.0" style="-fx-border-color: black;">
+                     <children>
+                        <Pane layoutX="10.0" layoutY="72.0" prefHeight="376.0" prefWidth="837.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="1.0" text="PAPS">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="37.0" text="Contact Name" />
+                              <Label layoutX="14.0" layoutY="83.0" text="Operation" />
+                              <Label layoutX="16.0" layoutY="133.0" text="Central Phone#" />
+                              <Label layoutX="13.0" layoutY="180.0" text="Cental Fax#" />
+                              <Label layoutX="13.0" layoutY="228.0" text="Email" />
+                              <Label layoutX="12.0" layoutY="279.0" text="Tracker Link" />
+                              <TextField fx:id="txtContactNamePAPS" layoutX="115.0" layoutY="33.0" onKeyReleased="#contactNamePAPSKeyReleased" prefHeight="25.0" prefWidth="288.0" />
+                              <Separator layoutX="416.0" layoutY="2.0" orientation="VERTICAL" prefHeight="355.0" prefWidth="14.0" />
+                              <ComboBox fx:id="ddlOperationPAPS" layoutX="114.0" layoutY="79.0" onAction="#ddlOperationPAPSAction" prefHeight="25.0" prefWidth="290.0" />
+                              <TextField fx:id="txtCentralPhonePAPS" layoutX="114.0" layoutY="129.0" prefHeight="25.0" prefWidth="114.0" />
+                              <Label layoutX="236.0" layoutY="133.0" text="Extension" />
+                              <TextField fx:id="txtExtensionPAPS" layoutX="296.0" layoutY="129.0" prefHeight="25.0" prefWidth="112.0" />
+                              <TextField fx:id="txtCentralFaxPAPS" layoutX="114.0" layoutY="176.0" prefHeight="25.0" prefWidth="111.0" />
+                              <Label layoutX="234.0" layoutY="180.0" text="24 Hours" />
+                              <ComboBox fx:id="ddl24HoursPAPS" layoutX="291.0" layoutY="176.0" onAction="#ddl24HoursPAPSAction" prefHeight="25.0" prefWidth="116.0" />
+                              <TextField fx:id="txtEmailPAPS" layoutX="115.0" layoutY="224.0" prefHeight="25.0" prefWidth="293.0" />
+                              <TextField fx:id="txtTrackerLinkPAPS" layoutX="115.0" layoutY="275.0" prefHeight="25.0" prefWidth="293.0" />
+                              <Label layoutX="441.0" layoutY="10.0" text="PARS">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="441.0" layoutY="37.0" text="Contact Name" />
+                              <TextField fx:id="txtContactNamePARS" layoutX="535.0" layoutY="33.0" onKeyReleased="#contactNamePARSKeyReleased" prefHeight="25.0" prefWidth="288.0" />
+                              <ComboBox fx:id="ddlOperationPARS" layoutX="536.0" layoutY="79.0" onAction="#ddlOperationPARSAction" prefHeight="25.0" prefWidth="289.0" />
+                              <TextField fx:id="txtTrackerLinkPARS" layoutX="537.0" layoutY="275.0" prefHeight="25.0" prefWidth="293.0" />
+                              <TextField fx:id="txtEmailPARS" layoutX="537.0" layoutY="224.0" prefHeight="25.0" prefWidth="293.0" />
+                              <ComboBox fx:id="ddl24HoursPARS" layoutX="716.0" layoutY="176.0" onAction="#ddl24HoursPARSAction" prefHeight="25.0" prefWidth="116.0" />
+                              <Label layoutX="656.0" layoutY="180.0" text="24 Hours" />
+                              <TextField fx:id="txtCentralFaxPARS" layoutX="537.0" layoutY="176.0" prefHeight="25.0" prefWidth="111.0" />
+                              <TextField fx:id="txtExtensionPARS" layoutX="718.0" layoutY="126.0" prefHeight="25.0" prefWidth="112.0" />
+                              <Label layoutX="657.0" layoutY="130.0" text="Extension" />
+                              <TextField fx:id="txtCentralPhonePARS" layoutX="539.0" layoutY="126.0" prefHeight="25.0" prefWidth="111.0" />
+                              <Label layoutX="440.0" layoutY="279.0" text="Tracker Link" />
+                              <Label layoutX="446.0" layoutY="228.0" text="Email" />
+                              <Label layoutX="441.0" layoutY="180.0" text="Cental Fax#" />
+                              <Label layoutX="445.0" layoutY="130.0" text="Central Phone#" />
+                              <Label layoutX="441.0" layoutY="83.0" text="Operation" />
+                              <Label fx:id="lblContactNamePAPS" layoutX="115.0" layoutY="57.0" prefHeight="17.0" prefWidth="289.0" />
+                              <Label fx:id="lblContactNamePARS" layoutX="538.0" layoutY="57.0" prefHeight="17.0" prefWidth="230.0" />
+                              <Label fx:id="lblOperationPAPS" layoutX="115.0" layoutY="104.0" prefHeight="17.0" prefWidth="288.0" />
+                              <Label fx:id="lblOperationPARS" layoutX="538.0" layoutY="104.0" prefHeight="17.0" prefWidth="283.0" />
+                              <Label fx:id="lbl24HoursPAPS" layoutX="291.0" layoutY="201.0" prefHeight="17.0" prefWidth="115.0" />
+                              <Label fx:id="lbl24HoursPARS" layoutX="718.0" layoutY="201.0" prefHeight="17.0" prefWidth="112.0" />
+                              <Label fx:id="lblStatusPAPS" layoutX="115.0" layoutY="349.0" prefHeight="17.0" prefWidth="292.0" />
+                              <Label fx:id="lblStatusPARS" layoutX="539.0" layoutY="349.0" prefHeight="17.0" prefWidth="214.0" />
+                           </children>
+                        </Pane>
+                        <Button fx:id="btnUpdateCustomBroker" layoutX="723.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnUpdateCustomBrokerAction" prefHeight="25.0" prefWidth="59.0" text="Update" />
+                        <Button fx:id="btnCancel" layoutX="792.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnCancelAction" text="Cancel" />
+                        <Label layoutX="14.0" layoutY="14.0" text="Custom Broker Name" />
+                        <TextField fx:id="txtCustomerBrokerName" layoutX="152.0" layoutY="10.0" onKeyReleased="#customerBrokerNameKeyReleased" prefHeight="25.0" prefWidth="306.0" />
+                        <Label layoutX="716.0" layoutY="14.0" text="Type" />
+                        <ComboBox fx:id="ddlType" layoutX="749.0" layoutY="10.0" onAction="#ddlTypeAction" prefHeight="25.0" prefWidth="104.0" />
+                        <Label fx:id="lblCustomBrokerName" layoutX="152.0" layoutY="35.0" prefHeight="17.0" prefWidth="304.0" />
+                        <Label layoutX="18.0" layoutY="391.0" text="Status" />
+                        <ComboBox fx:id="ddlStatusPAPS" layoutX="125.0" layoutY="396.0" onAction="#ddlStatusPAPSAction" prefHeight="25.0" prefWidth="294.0" />
+                        <ComboBox fx:id="ddlStatusPARS" layoutX="550.0" layoutY="396.0" onAction="#ddlStatusPARSAction" prefHeight="25.0" prefWidth="290.0" />
+                        <Label layoutX="450.0" layoutY="400.0" text="Status" />
+                        <Label fx:id="lblType" layoutX="749.0" layoutY="35.0" prefHeight="17.0" prefWidth="102.0" />
+                        <Button fx:id="btnEdit" layoutX="657.0" layoutY="449.0" mnemonicParsing="false" onAction="#handleEditAction" prefHeight="25.0" prefWidth="59.0" text="Edit" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Products">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="About">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Contact">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</Pane>

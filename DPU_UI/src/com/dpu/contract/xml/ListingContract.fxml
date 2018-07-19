@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1247.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.CarrierController">
+   <children>
+      <Pane prefHeight="49.0" prefWidth="1239.0" style="-fx-background-color: lightgrey;" />
+      <TableView fx:id="tblCarrier" layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="1239.0">
+         <columns>
+            <TableColumn fx:id="contract" prefWidth="61.0" text="Contract" />
+            <TableColumn fx:id="carrier" prefWidth="56.0" text="Carrier" />
+            <TableColumn fx:id="nextETA" prefWidth="74.0" text="Next ETA" />
+            <TableColumn fx:id="nextProbil" prefWidth="87.0" text="Next Probil" />
+            <TableColumn fx:id="nextEvent" text="Next Event" />
+            <TableColumn fx:id="nextLocation" prefWidth="95.0" text="Next Location" />
+            <TableColumn fx:id="nextCity" prefWidth="81.0" text="Next City" />
+            <TableColumn fx:id="ns" prefWidth="46.0" text="N/S" />
+            <TableColumn fx:id="lastETA" prefWidth="74.0" text="Last ETA" />
+            <TableColumn fx:id="lastEvent" prefWidth="78.0" text="Last Event" />
+            <TableColumn fx:id="lastLocation" prefWidth="83.0" text="Last Location" />
+            <TableColumn fx:id="lastCity" prefWidth="64.0" text="Last City" />
+            <TableColumn fx:id="ls" prefWidth="45.0" text="L\S" />
+            <TableColumn fx:id="arrangedBy" text="Arranged By" />
+            <TableColumn fx:id="driverAssigned" prefWidth="102.0" text="Driver Assigned" />
+            <TableColumn fx:id="tollFree" prefWidth="62.0" text="Toll Free" />
+            <TableColumn fx:id="phoneNo" prefWidth="75.0" text="Phone No." />
+         </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="15.0" text="Quick Filter">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDelete" layoutX="523.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnDeleteCarrierContractAction" prefHeight="25.0" prefWidth="55.0" text="Delete" />
+      <Button fx:id="btnEdit" layoutX="463.0" layoutY="11.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="55.0" text="  Edit  " />
+      <Button fx:id="btnGo" layoutX="287.0" layoutY="11.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="32.0" text="Go" />
+      <TextField fx:id="txtGoCarrier" layoutX="82.0" layoutY="11.0" prefHeight="25.0" prefWidth="200.0" />
+      <Button fx:id="btnAddCarrierContract" layoutX="402.0" layoutY="11.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="55.0" text="Add" />
+      <CheckBox layoutX="327.0" layoutY="15.0" mnemonicParsing="false" text="Show All" />
+   </children>
+</Pane>

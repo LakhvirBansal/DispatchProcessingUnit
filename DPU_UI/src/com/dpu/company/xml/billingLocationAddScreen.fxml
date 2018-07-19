@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="763.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="499.0" prefWidth="763.0">
+      <children>
+        <Label layoutX="9.0" layoutY="14.0" text="Name" />
+        <TextField layoutX="102.0" layoutY="11.0" prefWidth="200.0" />
+        <Label layoutX="9.0" layoutY="56.0" text="Address" />
+        <TextField layoutX="102.0" layoutY="56.0" prefWidth="200.0" />
+        <Label layoutX="9.0" layoutY="105.0" text="Unit" />
+        <Label layoutX="353.0" layoutY="11.0" text="Contact" />
+        <Label layoutX="9.0" layoutY="151.0" text="City" />
+        <Label layoutX="353.0" layoutY="62.0" text="Position" />
+        <Label layoutX="9.0" layoutY="192.0" text="Prov/state" />
+        <Label layoutX="353.0" layoutY="97.0" text="Email" />
+        <TextField layoutX="102.0" layoutY="102.0" prefWidth="200.0" />
+        <TextField layoutX="102.0" layoutY="189.0" prefWidth="78.0" />
+        <TextField layoutX="102.0" layoutY="148.0" prefWidth="200.0" />
+        <TextField layoutX="427.0" layoutY="11.0" prefWidth="200.0" />
+        <Button layoutX="684.0" layoutY="417.0" mnemonicParsing="false" prefWidth="56.0" text="Save" />
+        <Button layoutX="684.0" layoutY="464.0" mnemonicParsing="false" text="Cancel" />
+        <Label layoutX="184.0" layoutY="192.0" text="Postal/Zip" />
+        <TextField layoutX="246.0" layoutY="189.0" prefWidth="56.0" />
+        <Label layoutX="9.0" layoutY="234.0" text="Air (CDN)" />
+        <Label layoutX="9.0" layoutY="268.0" text="Air (U.S.)" />
+        <Label layoutX="9.0" layoutY="302.0" text="Status" />
+        <TextField layoutX="102.0" layoutY="231.0" prefWidth="200.0" />
+        <TextField layoutX="102.0" layoutY="268.0" prefWidth="200.0" />
+        <TextField layoutX="427.0" layoutY="51.0" prefWidth="200.0" />
+        <TextField layoutX="427.0" layoutY="91.0" prefWidth="200.0" />
+        <Label layoutX="353.0" layoutY="143.0" text="Attention" />
+        <Label layoutX="354.0" layoutY="192.0" text="Phone" />
+        <Label layoutX="353.0" layoutY="226.0" text="Fax" />
+        <Label layoutX="350.0" layoutY="263.0" text="Toll Free" />
+        <Label layoutX="518.0" layoutY="186.0" text="Ext" />
+        <Label layoutX="519.0" layoutY="220.0" text="Prefix" />
+        <TextField layoutX="427.0" layoutY="186.0" prefWidth="85.0" />
+        <TextField layoutX="427.0" layoutY="137.0" prefWidth="200.0" />
+        <TextField layoutX="427.0" layoutY="219.0" prefWidth="85.0" />
+        <TextField layoutX="427.0" layoutY="254.0" prefWidth="200.00009999999747" />
+        <TextField layoutX="549.0" layoutY="183.0" prefWidth="78.0" />
+        <TextField layoutX="549.0" layoutY="217.0" prefWidth="78.0" />
+        <Label layoutX="9.0" layoutY="359.0" text="Related Customers" />
+        <Label layoutX="350.0" layoutY="356.0" text="Default Invoice Notes" />
+        <TextArea layoutX="9.0" layoutY="375.0" prefHeight="117.0" prefWidth="293.0" wrapText="true" />
+        <TextArea layoutX="334.0" layoutY="375.0" prefHeight="117.0" prefWidth="293.0" wrapText="true" />
+        <ComboBox layoutX="102.0" layoutY="303.0" prefHeight="21.0" prefWidth="200.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

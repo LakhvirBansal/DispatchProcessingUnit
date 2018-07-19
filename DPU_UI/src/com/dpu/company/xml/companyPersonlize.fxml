@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0000999999975" prefWidth="205.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.dpu.controller.CompanyPersonalizeController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="587.0" prefWidth="205.0">
+      <children>
+        <CheckBox fx:id="chkName" layoutX="14.0" layoutY="3.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="name" />
+        <CheckBox fx:id="chkUnit" layoutX="14.0" layoutY="63.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="unitNo" />
+        <CheckBox fx:id="chkAddress" layoutX="14.0" layoutY="33.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="address" />
+        <CheckBox fx:id="chkCity" layoutX="14.0" layoutY="92.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="city" />
+        <CheckBox fx:id="chkProvienceState" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="provience_state" />
+        <CheckBox fx:id="chkZip" layoutX="14.0" layoutY="150.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="zip" />
+        <CheckBox fx:id="chkEmail" layoutX="14.0" layoutY="182.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="email" />
+        <CheckBox fx:id="chkWebsite" layoutX="14.0" layoutY="213.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="website" />
+        <CheckBox fx:id="chkContact" layoutX="14.0" layoutY="246.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="contact" />
+        <CheckBox fx:id="chkPosition" layoutX="14.0" layoutY="277.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="position" />
+        <CheckBox fx:id="chkPhone" layoutX="14.0" layoutY="306.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="phone" />
+        <CheckBox fx:id="chkExtension" layoutX="14.0" layoutY="335.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="extension" />
+        <CheckBox fx:id="chkFax" layoutX="14.0" layoutY="367.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="fax" />
+        <CheckBox fx:id="chkCompanyPrefix" layoutX="14.0" layoutY="399.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="company Prefix" />
+        <CheckBox fx:id="chkTollfree" layoutX="14.0" layoutY="429.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="tollfree" />
+        <CheckBox fx:id="chkCellular" layoutX="14.0" layoutY="459.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="cellular" />
+        <CheckBox fx:id="chkPager" layoutX="14.0" layoutY="495.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="pager" />
+        <CheckBox fx:id="chkCustomerNotes" layoutX="14.0" layoutY="524.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="customer Notes" />
+        <CheckBox fx:id="chkafterHours" layoutX="14.0" layoutY="552.0" mnemonicParsing="false" prefHeight="21.9609375" prefWidth="191.0" text="after Hours" />
+      </children>
+    </Pane>
+    <Button fx:id="btnCancel" layoutX="127.0" layoutY="603.0" mnemonicParsing="false" onAction="#btnCancelPersonalizeAction" text="CANCEL" />
+    <Button fx:id="btnSave" layoutX="55.0" layoutY="603.0" mnemonicParsing="false" onAction="#btnSavePersonalizeAction" text="SAVE" />
+  </children>
+</AnchorPane>

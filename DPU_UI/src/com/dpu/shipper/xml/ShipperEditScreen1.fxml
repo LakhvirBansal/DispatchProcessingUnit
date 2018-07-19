@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.ShipperEditController">
+  <children>
+    <Label layoutX="14.0" layoutY="37.0" text="Location">
+      <font>
+        <Font size="14.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="14.0" layoutY="80.0" text="Address" />
+    <Label font="$x1" layoutX="14.0" layoutY="110.0" text="Unit#" />
+    <Label font="$x1" layoutX="14.0" layoutY="148.0" text="City" />
+    <Label font="$x1" layoutX="14.0" layoutY="184.0" text="Prov/State" />
+    <Label font="$x1" layoutX="14.0" layoutY="217.0" text="Status" />
+    <Label font="$x1" layoutX="16.0" layoutY="266.0" text="Zone" />
+    <Label font="$x1" layoutX="14.0" layoutY="308.0" text="Lead Time" />
+    <Label font="$x1" layoutX="14.0" layoutY="348.0" text="Time Zone" />
+    <TextField fx:id="txtAddress" layoutX="89.0" layoutY="78.0" prefHeight="25.0" prefWidth="240.0" />
+    <TextField fx:id="txtUnitNo" layoutX="89.0" layoutY="111.0" prefHeight="25.0" prefWidth="240.0" />
+    <TextField fx:id="txtCity" layoutX="89.0" layoutY="145.0" prefHeight="25.0" prefWidth="240.0" />
+    <TextField fx:id="txtProvince" layoutX="89.0" layoutY="181.0" prefHeight="25.0" prefWidth="240.0" />
+    <TextField fx:id="txtZone" layoutX="88.0" layoutY="263.0" prefHeight="25.0" prefWidth="240.0" />
+    <TextField fx:id="txtLeadTime" layoutX="89.0" layoutY="305.0" prefHeight="25.0" prefWidth="240.0" />
+    <TextField fx:id="txtTimeZone" layoutX="89.0" layoutY="345.0" prefHeight="25.0" prefWidth="240.0" />
+    <Label font="$x1" layoutX="347.0" layoutY="40.0" text="Contact" />
+    <Label font="$x1" layoutX="347.0" layoutY="71.0" text="Position" />
+    <Label font="$x1" layoutX="347.0" layoutY="105.0" text="Phone" />
+    <Label font="$x1" layoutX="347.0" layoutY="139.0" text="Fax" />
+    <Label font="$x1" layoutX="347.0" layoutY="171.0" text="Toll Free" />
+    <Label font="$x1" layoutX="347.0" layoutY="203.0" text="Cell Number" />
+    <Label font="$x1" layoutX="347.0" layoutY="235.0" text="Email" />
+    <Label font="$x1" layoutX="347.0" layoutY="317.0" text="Importer" />
+    <TextField fx:id="txtImporter" layoutX="432.0" layoutY="313.0" prefHeight="25.0" prefWidth="240.0" />
+    <TextField fx:id="txtEmail" layoutX="432.0" layoutY="233.0" prefHeight="25.0" prefWidth="240.0" />
+    <CheckBox fx:id="ETAToPickupAlert" layoutX="434.0" layoutY="267.0" mnemonicParsing="false" text="ETA To Pickup Alert" />
+    <CheckBox fx:id="ETAToDeliverAlert" layoutX="434.0" layoutY="289.0" mnemonicParsing="false" text="ETA To Deliver Alert" />
+    <CheckBox fx:id="RegisteredCSAFacility" layoutX="434.0" layoutY="345.0" mnemonicParsing="false" text="Registered C.S.A. Facility" />
+    <CheckBox fx:id="RegisteredCTPATFacility" layoutX="434.0" layoutY="369.0" mnemonicParsing="false" text="Registered  C-TPAT Facility" />
+    <CheckBox fx:id="WarehouseorCrossDockFacility" layoutX="434.0" layoutY="395.0" mnemonicParsing="false" text="Warehouse or Cross-Dock Facility" />
+    <Label layoutX="16.0" layoutY="418.0" text="Internal Notes">
+      <font>
+        <Font size="13.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label font="$x2" layoutX="351.0" layoutY="418.0" text="Standard Notes" />
+    <TextArea fx:id="txtInternalNotes" layoutX="12.0" layoutY="437.0" prefHeight="97.0" prefWidth="325.0" wrapText="true" />
+    <TextArea fx:id="txtStandardNotes" layoutX="347.0" layoutY="437.0" prefHeight="97.0" prefWidth="325.0" wrapText="true" />
+    <Button fx:id="btnDirections" font="$x2" layoutX="12.0" layoutY="543.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Directions" />
+    <Button fx:id="btnHours" font="$x2" layoutX="93.0" layoutY="543.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Hours" />
+    <Button fx:id="btnNotes" font="$x2" layoutX="163.0" layoutY="543.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Notes" />
+    <Button fx:id="btnReports" font="$x2" layoutX="233.0" layoutY="543.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Reports" />
+    <Button fx:id="btnAC" font="$x2" layoutX="303.0" layoutY="543.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="35.0" text="AC" />
+    <Button fx:id="btnUpdateShipper" font="$x2" layoutX="537.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnUpdateShipperAction" prefHeight="25.0" prefWidth="65.0" text="Update" />
+    <Button fx:id="btnCancelShipper" font="$x2" layoutX="608.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnCancelShipperAction" prefHeight="25.0" prefWidth="65.0" text="Cancel" />
+    <TextField fx:id="txtContact" layoutX="432.0" layoutY="36.0" prefHeight="25.0" prefWidth="240.0" />
+    <TextField fx:id="txtPosition" layoutX="432.0" layoutY="70.0" prefHeight="25.0" prefWidth="240.0" />
+    <TextField fx:id="txtPhone" layoutX="432.0" layoutY="103.0" prefWidth="80.0" />
+    <TextField fx:id="txtFax" layoutX="432.0" layoutY="135.0" prefWidth="80.0" />
+    <TextField fx:id="txtTollFree" layoutX="432.0" layoutY="168.0" prefWidth="80.0" />
+    <TextField fx:id="txtCellNumber" layoutX="432.0" layoutY="201.0" prefHeight="25.0" prefWidth="240.0" />
+    <Label font="$x1" layoutX="520.0" layoutY="106.0" text="Ext" />
+    <Label font="$x1" layoutX="520.0" layoutY="138.0" text="Prefix" />
+    <Label font="$x1" layoutX="519.0" layoutY="170.0" text="Plant#" />
+    <TextField fx:id="txtExt" layoutX="562.0" layoutY="103.0" prefWidth="109.0" />
+    <TextField fx:id="txtPrefix" layoutX="562.0" layoutY="136.0" prefWidth="109.0" />
+    <TextField fx:id="txtPlant" layoutX="562.0" layoutY="168.0" prefWidth="109.0" />
+    <ComboBox fx:id="ddlStatus" layoutX="89.0" layoutY="214.0" onAction="#ddlStatusAction" prefHeight="25.0" prefWidth="240.0" />
+    <TextField fx:id="txtLocationName" layoutX="89.0" layoutY="36.0" onKeyPressed="#shipperLocationKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+    <Label fx:id="locationMsg" layoutX="88.0" layoutY="59.0" prefWidth="240.00009155273438" text=" " />
+    <Label fx:id="statusMsg" layoutX="88.0" layoutY="238.0" prefWidth="240.0" text="" />
+      <Button fx:id="btnEdit" layoutX="472.0" layoutY="543.0" mnemonicParsing="false" onAction="#handleEditAction" prefHeight="29.0" prefWidth="55.0" text="Edit" />
+  </children>
+</AnchorPane>

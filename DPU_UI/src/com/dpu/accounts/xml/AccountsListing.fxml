@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.database.AccountsController">
+  <children>
+      <AnchorPane fx:id="anchorPaneAccounts" prefHeight="49.0" prefWidth="1015.0" style="-fx-background-color: #d6eaf8;">
+         <children>
+            <TextField fx:id="txtSearchAccounts" focusTraversable="false" layoutX="765.0" layoutY="6.0" prefHeight="32.0" prefWidth="200.0" promptText="Enter account name to search..." />
+            <ImageView fx:id="btnDeleteAccounts" fitHeight="32.0" fitWidth="32.0" layoutX="97.0" layoutY="9.0" onMouseClicked="#btnDeleteAccountsAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/delete.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnEditAccounts" fitHeight="32.0" fitWidth="32.0" layoutX="56.0" layoutY="9.0" onMouseClicked="#btnEditAccountsAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/edit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnAddAccounts" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="9.0" onMouseClicked="#btnAddAccountsAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/plus.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnGoAccounts" fitHeight="32.0" fitWidth="32.0" layoutX="974.0" layoutY="6.0" onMouseClicked="#btnGoAccountsAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="com/dpu/common/xml/search.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+    <TableView fx:id="tblAccounts" layoutY="43.0" onMouseClicked="#handleAddContMouseClick" prefHeight="584.0" prefWidth="1015.0">
+      <columns>
+        <TableColumn fx:id="accountNo" maxWidth="5000.0" minWidth="10.0" prefWidth="250.0" text="AccountNo" />
+        <TableColumn fx:id="accountName" maxWidth="5000.0" minWidth="10.0" prefWidth="250.0" text="Account Name" />
+        <TableColumn fx:id="accountType" maxWidth="5000.0" minWidth="10.0" prefWidth="250.0" text="Account Type" />
+            <TableColumn fx:id="parent" maxWidth="5000.0" minWidth="10.0" prefWidth="250.0" text="Parent" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>

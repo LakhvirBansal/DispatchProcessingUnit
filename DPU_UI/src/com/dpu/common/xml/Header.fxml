@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" prefHeight="59.0" prefWidth="979.0" style="-fx-background-color: lightgrey;">
+   <children>
+      <Text layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quick Filter">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="88.0" layoutY="9.0" />
+      <CheckBox layoutX="276.0" layoutY="11.0" mnemonicParsing="false" text="Show All" />
+      <Button layoutX="238.0" layoutY="8.0" mnemonicParsing="false" text="Go" />
+      <Button layoutX="349.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="Add" />
+      <Button layoutX="409.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="Edit" />
+      <Button layoutX="469.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="Delete" />
+      <Button layoutX="529.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="E-Mail" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="481.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dpu.controller.database.AccountsAddController">
+   <children>
+      <Text layoutX="20.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account No" wrappingWidth="107.759765625" AnchorPane.bottomAnchor="312.486328125" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="317.240234375" AnchorPane.topAnchor="79.892578125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Name" wrappingWidth="107.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub Account" wrappingWidth="131.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtAccountNo" layoutX="188.0" layoutY="77.0" prefHeight="25.0" prefWidth="240.0" />
+      <Button fx:id="btnSaveAccounts" layoutX="294.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnSaveAccountsAction" prefHeight="25.0" prefWidth="65.0" text="Save">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Text layoutX="18.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="131.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCancel" layoutX="363.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnCancelAction" prefHeight="25.0" prefWidth="65.0" text="Cancel">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblService" layoutX="158.0" layoutY="104.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblTextField" layoutX="158.0" layoutY="150.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblAssociationWith" layoutX="158.0" layoutY="197.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="lblStatus" layoutX="159.0" layoutY="244.0" prefHeight="17.0" prefWidth="240.0" />
+      <TextField fx:id="txtAccountName" layoutX="188.0" layoutY="128.0" prefHeight="25.0" prefWidth="240.0" />
+      <TextField fx:id="txtDefaultTaxCode" layoutX="187.0" layoutY="292.0" onKeyPressed="#txtDefaultTaxCodeKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+      <Text layoutX="18.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Default Tax Code" wrappingWidth="131.759765625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label layoutX="18.0" layoutY="23.0" text="Type" />
+      <ComboBox fx:id="ddlAccountType" layoutX="72.0" layoutY="19.0" prefWidth="150.0" />
+      <ComboBox fx:id="ddlCurrency" layoutX="308.0" layoutY="19.0" prefWidth="150.0" />
+      <Label layoutX="241.0" layoutY="23.0" text="Currency" />
+      <Separator layoutX="7.0" layoutY="54.0" prefHeight="3.0" prefWidth="467.0" />
+      <TextField fx:id="txtSubAccount" layoutX="188.0" layoutY="174.0" onKeyPressed="#txtSubAccountKeyPressed" prefHeight="25.0" prefWidth="240.0" />
+      <TextArea fx:id="txtDescription" layoutX="188.0" layoutY="222.0" prefHeight="52.0" prefWidth="240.0" />
+   </children>
+</AnchorPane>
